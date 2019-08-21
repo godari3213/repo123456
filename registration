@@ -1,0 +1,25 @@
+
+
+
+
+Scenario Outline: Demotours login
+
+Given User know that the application is up and running
+And User having the valida data
+When user provides the valid data "<uname>" and "<pswd>" clicks on sign in button
+Then User Should be logged into the system
+
+Examples:
+| uname | pswd |
+| demo | demo |
+| test | pswrd2 |
+
+Scenario:
+Given application is closed
+
+
+
+Scenario:Refund regression test
+Given item is returned
+When and item is not further not damaged
+Then initiate the refund process
